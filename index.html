@@ -1,0 +1,290 @@
+<html lang="en" dir="ltr">
+    <head>
+        <title>Product Landing Page</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"><link rel="stylesheet" href="styles.css" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+    <style>
+        @media(max-width: 800px){
+        #header{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    body{
+        background: #f2f2f2;
+        font-family: Lato;
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    #header{
+    display: flex;
+    width: 100%;
+    background:white;
+    justify-content: center;
+    }
+    #header-img{
+    display: flex;
+}
+
+#navbar{
+    width: 100%;
+}
+#nav-bar a{
+    font-size: 1.2rem;
+    padding: 20px 20px 20px 20px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+#nav-bar a:hover{
+    background-color:skyblue;
+    font-size: 1.4rem;
+}
+#nav-bar ul{
+    display: flex;
+    list-style: none;
+    padding: 2px;
+}
+main{
+    display: grid;
+    height: 100%;
+    margin: 0;
+}
+#container{
+    position: relative;
+    overflow-y: auto;
+}
+
+@media(max-width: 600px) {
+    #nav-bar a:hover{
+        background-color:skyblue;
+        font-size: 1.4rem;
+    }
+    #nav-bar ul{
+        margin: 0px;
+        flex-direction: column;
+    }
+    #nav-bar li{
+        text-align: center;
+        border: 0.05rem solid black;
+    }
+    #nav-bar{
+    width: 100%;
+    }
+}
+#principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+#form{
+    text-align: center;
+}
+#submit{
+    margin-top: 10px;
+    font-size: 0.9rem;
+    border-radius: 4px;
+    font-weight: bolder;
+    background: #ffc300;
+    padding: 6px 10px 6px 18px;
+}
+#email{
+    width: 280px;
+    padding: 7px 36px 6px 10px;
+}
+#home{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#news{
+    padding: 15px;
+    justify-content: center;
+    display: flex;
+}
+#store{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding: 30px 0px;
+}
+td{
+    padding: 12px;
+}
+@media(max-width:600px){
+    #email{
+        width: 75%;
+    }
+    #form{
+        text-align: center;
+        width: 100%;
+    }
+}
+@media(max-width: 800px){
+    #store{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        margin-top: 30px;
+    }
+}
+.box h2{
+    background: rgb(192, 189, 189);
+    padding: 10px;
+    margin: 0;
+}
+.box:hover{
+    background: white;
+}
+.box{
+    text-align: center;
+    border: 1px solid black;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    height: 310px;
+    width: 260px;
+}
+#footer{
+    background: rgb(229, 226, 226);
+    margin-left: 10%;
+    width: 75%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+#cpabove, #cp{
+    text-align: center;
+}
+#cpabove{
+    word-spacing: 30px;
+}
+#cp{
+    color:black;
+    font-style: italic;
+    opacity: 0.7;
+    margin-top: -8px;
+}
+    </style>
+    </head>
+    <body>
+        <main>
+            <header id="header">
+                <div>
+                    <img id="header-img" alt="logo" src="https://github.com/shashilsravan/SurveyFormFCC/blob/master/iconbgless.png?raw=true"></div>
+                <nav id="nav-bar">
+                    <ul>
+                        <li><a  href="#home" class="nav-link">Home</a></li>
+                        <li><a  href="#news" class="nav-link">News</a></li>
+                        <li><a  href="#store" class="nav-link">Store</a></li>
+                        <!-- <li><a  href="#profile" class="nav-link">About</a></li> -->
+                    </ul>
+                </nav>
+            </header>
+            <div id="container">
+                <section id="principal">
+                    <h1>Enter your email to get latest updates: </h1>
+                    <form id="form" action=" https://www.freecodecamp.com/email-submit">
+                        <input name="email" id="email" placeholder="Enter your email address" type="email"><br>
+                        <input name="submit" id="submit" type="submit" value="GET STARTED">
+                    </form>
+                </section>
+                <section id="home">
+                    <table>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:48px;color:orange;">fireplace</i></td>
+                            <td>
+                                <h2>Premium Materials</h2>
+                                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of your purchase.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:48px;color:orange;">local_shipping</i></td>
+                            <td>
+                                <h2>Fast Shipping</h2>
+                                <p>We make sure you recieve your trombone as soon as we have finished making it. We also provide free returns if you are not satisfied.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:48px;color:orange;">battery_charging_full</i></td>
+                            <td>
+                                <h2>Quality Assurance</h2>
+                                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i class="material-icons" style="font-size:48px;color:orange;">backup</i></td>
+                            <td>
+                                <h2>Cloud Storage</h2>
+                                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                            </td>
+                        </tr>
+                    </table>
+                </section>
+                <section id="news">
+                    <iframe id="video" height="300" width="400" src="https://www.youtube.com/embed/tgbNymZ7vqY" 
+                    frameborder="0" allowfullscreen>
+                </iframe>
+                </section>
+                <section id="store">
+                    <form class="box">
+                        <h2>Python Course</h2>
+                        <h1>$1000</h1>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <input id="submit" type="submit" value="SELECT">
+                    </form>
+                    <form class="box">
+                        <h2>AI and ML Course</h2>
+                        <h1>$2000</h1>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <input id="submit" type="submit" value="SELECT">
+                    </form>
+                    <form class="box">
+                        <h2>AWS Fundamentals</h2>
+                        <h1>$1500</h1>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <input id="submit" type="submit" value="SELECT">
+                    </form>
+                    <form class="box">
+                        <h2>Learn HTML/CSS</h2>
+                        <h1>$800</h1>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <p>Lorem ipsum</p>
+                        <input id="submit" type="submit" value="SELECT">
+                    </form>
+                </section>
+                <section id="profile">
+
+                </section>
+                <footer id="footer">
+                    <p id="cpabove">
+                        <a href="#" style="text-decoration: none;">Privacy</a>      
+                        <a href="#" style="text-decoration: none;">Terms</a>     
+                        <a href="#" style="text-decoration: none;">Contact</a>
+                    </p>
+                    <p id="cp">Copyright 2020, Smarty Enterprise.</p>
+                </footer>
+            </div>
+        </main>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
